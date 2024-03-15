@@ -1,0 +1,230 @@
+{
+  "address": "0x79317218de52Dfa2a233a3AeED098161889418c7",
+  "abi": [
+    {
+      "type": "constructor",
+      "stateMutability": "nonpayable",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_owner",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "NotAllowedOperator",
+      "inputs": []
+    },
+    {
+      "type": "event",
+      "name": "OperatorChanged",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "",
+          "internalType": "address",
+          "indexed": true
+        },
+        {
+          "type": "bool",
+          "name": "",
+          "internalType": "bool",
+          "indexed": false
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OwnershipTransferred",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "user",
+          "internalType": "address",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "newOwner",
+          "internalType": "address",
+          "indexed": true
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "name": "BIPS",
+      "inputs": []
+    },
+    {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+        {
+          "type": "uint64",
+          "name": "",
+          "internalType": "uint64"
+        }
+      ],
+      "name": "lastExecution",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "",
+          "internalType": "contract BaseStrategy"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "",
+          "internalType": "bool"
+        }
+      ],
+      "name": "operators",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+        {
+          "type": "address",
+          "name": "",
+          "internalType": "address"
+        }
+      ],
+      "name": "owner",
+      "inputs": []
+    },
+    {
+      "type": "function",
+      "stateMutability": "nonpayable",
+      "outputs": [],
+      "name": "run",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "strategy",
+          "internalType": "contract BaseStrategy"
+        },
+        {
+          "type": "uint256",
+          "name": "maxBentoBoxAmountIncreaseInBips",
+          "internalType": "uint256"
+        },
+        {
+          "type": "uint256",
+          "name": "maxBentoBoxChangeAmountInBips",
+          "internalType": "uint256"
+        },
+        {
+          "type": "address[]",
+          "name": "callees",
+          "internalType": "address[]"
+        },
+        {
+          "type": "bytes[]",
+          "name": "calls",
+          "internalType": "bytes[]"
+        },
+        {
+          "type": "bool",
+          "name": "postRebalanceEnabled",
+          "internalType": "bool"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "stateMutability": "nonpayable",
+      "outputs": [],
+      "name": "runMultiple",
+      "inputs": [
+        {
+          "type": "address[]",
+          "name": "strategy",
+          "internalType": "contract BaseStrategy[]"
+        },
+        {
+          "type": "uint256[]",
+          "name": "maxBentoBoxAmountIncreaseInBips",
+          "internalType": "uint256[]"
+        },
+        {
+          "type": "uint256[]",
+          "name": "maxBentoBoxChangeAmountInBips",
+          "internalType": "uint256[]"
+        },
+        {
+          "type": "address[][]",
+          "name": "callees",
+          "internalType": "address[][]"
+        },
+        {
+          "type": "bytes[][]",
+          "name": "data",
+          "internalType": "bytes[][]"
+        },
+        {
+          "type": "bool[]",
+          "name": "postRebalanceEnabled",
+          "internalType": "bool[]"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "stateMutability": "nonpayable",
+      "outputs": [],
+      "name": "setOperator",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "operator",
+          "internalType": "address"
+        },
+        {
+          "type": "bool",
+          "name": "status",
+          "internalType": "bool"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "stateMutability": "nonpayable",
+      "outputs": [],
+      "name": "transferOwnership",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "newOwner",
+          "internalType": "address"
+        }
+      ]
+    }
+  ]
+}
