@@ -33,8 +33,6 @@ abstract contract FuzzStorageVariables is FuzzConstants {
     MockERC20 internal tokenB6;
     MockERC20 internal tokenA8;
     MockERC20 internal tokenB8;
-    MockERC20 internal tokenA24;
-    MockERC20 internal tokenB24;
 
     MockERC20[] internal tokens;
 

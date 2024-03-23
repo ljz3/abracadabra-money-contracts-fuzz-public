@@ -4,7 +4,7 @@ Abracadabra engaged Guardian Audits for an in-depth security review of Mimswap a
 
 # Contents
 
-This fuzzing suite was created for the scope below, and updated for remediations at commit hash [f727d27d27a726c867be3df1c2a8be1a63b5ec7b](https://github.com/Abracadabra-money/abracadabra-money-contracts/tree/f727d27d27a726c867be3df1c2a8be1a63b5ec7b). The fuzzing suite targets the `Router.sol`, `MagicLP.sol` and `Factory.sol` contracts. `PrivateRouter.sol` and the functionality that is included with it was not fuzzed as part of this engagement as it was added during remediations. Additionally, the blast contracts were not fuzzed due to the timeboxed nature of this engagement.
+This fuzzing suite was created for the scope below, and updated for remediations at commit hash [df58f86c40c952fa7be7b79a626233b9d07a6a4f](https://github.com/Abracadabra-money/abracadabra-money-contracts/tree/df58f86c40c952fa7be7b79a626233b9d07a6a4f). The fuzzing suite targets the `Router.sol`, `MagicLP.sol` and `Factory.sol` contracts. `PrivateRouter.sol` and the functionality that is included with it was not fuzzed as part of this engagement as it was added during remediations. Additionally, the blast contracts were not fuzzed due to the timeboxed nature of this engagement.
 
 All properties tested can be found in `Properties.md`.
 
