@@ -313,6 +313,8 @@ abstract contract FunctionCalls is FuzzBase, FuzzStorageVariables {
         );
     }
 
+    /** 
+     * @notice The _previewAddLiquidityCall is deprecated as part of remediations
     function _previewAddLiquidityCall(
         address lp,
         uint256 baseInAmount,
@@ -324,6 +326,7 @@ abstract contract FunctionCalls is FuzzBase, FuzzStorageVariables {
             abi.encodeWithSelector(router.previewAddLiquidity.selector, lp, baseInAmount, quoteInAmount)
         );
     }
+    */
 
     function _previewRemoveLiquidityCall(address lp, uint256 sharesIn) internal returns (bool success, bytes memory returnData) {
         emit PreviewRemoveLiquidityCall(lp, sharesIn);
