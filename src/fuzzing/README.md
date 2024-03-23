@@ -24,7 +24,9 @@ echidna . --contract Fuzz --config echidna-config.yaml --workers <Number of Work
 # Scope
 
 Repo: https://github.com/Abracadabra-money/abracadabra-money-contracts
+
 Branch: `main`
+
 Commit: `ab3ab131c008422768312188d43e95a53191b241`
 
 ```
