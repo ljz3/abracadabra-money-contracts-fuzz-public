@@ -28,10 +28,10 @@ abstract contract PreconditionsFactory is PreconditionsBase {
 
         address baseToken = address(tokens[baseToken_ % tokens.length]);
         address quoteToken = address(tokens[quoteToken_ % tokens.length]);
-        if(baseToken == quoteToken) {
+        if (baseToken == quoteToken) {
             quoteToken = address(tokens[(quoteToken_ + 1) % tokens.length]);
         }
-        
+
         lpFeeRate_ = clampBetween(lpFeeRate_, MIN_LP_FEE_RATE, MAX_LP_FEE_RATE);
         i_ = clampBetween(i_, MIN_I, MAX_I);
         k_ = clampBetween(k_, 0, MAX_K);

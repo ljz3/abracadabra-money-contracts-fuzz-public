@@ -137,7 +137,7 @@ abstract contract Properties_LIQ is PropertiesBase {
     }
     */
 
-   /**
+    /**
     * @notice This invariant is deprecated as part of remediations
     function invariant_LIQ_13(uint256 preview, uint256 actual) internal {
         eq(preview, actual, LIQ_13);
